@@ -1,7 +1,11 @@
 <template>
-  <div>
-      DashBoard Page
-  </div>
+  <v-container
+    fluid
+  >
+  <v-card class="pa-3">
+    대시보드
+  </v-card>
+  </v-container>
 </template>
 
 <script>

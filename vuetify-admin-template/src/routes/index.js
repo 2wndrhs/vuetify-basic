@@ -2,7 +2,8 @@ import VueRouter from 'vue-router';
 import Vue from 'vue';
 import {publicPath} from '../../vue.config.js';
 import DashBoard from '../views/DashBoard.vue';
-import GridSystem from '../views/GridSystem.vue'
+import GridSystem from '../views/GridSystem.vue';
+import GridListPage from '../views/GridListPage.vue';
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ export const router = new VueRouter({
             path: '/grid-system',
             name: 'GridSystem',
             component: GridSystem
+        },
+        {
+            path: '/grid-list-page',
+            name: 'GridListPage',
+            component: GridListPage
         }
     ]
 })
