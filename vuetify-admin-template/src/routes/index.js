@@ -4,6 +4,7 @@ import {publicPath} from '../../vue.config.js';
 import DashBoard from '../views/DashBoard.vue';
 import GridSystem from '../views/GridSystem.vue';
 import GridListPage from '../views/GridListPage.vue';
+import Breakpoints from '../views/Breakpoints.vue';
 
 Vue.use(VueRouter);
 
@@ -29,6 +30,11 @@ export const router = new VueRouter({
             path: '/grid-list-page',
             name: 'GridListPage',
             component: GridListPage
+        },
+        {
+            path: '/breakpoints',
+            name: 'Breakpoints',
+            component: Breakpoints
         }
     ]
 })

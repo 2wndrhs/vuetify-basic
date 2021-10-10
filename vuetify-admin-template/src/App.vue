@@ -1,14 +1,14 @@
 <template>
   <v-app>
+    <!-- app 속성은 컴포넌트를 기본 레이아웃으로 만듬 -->
     <v-app-bar
       app
       color="primary"
       dark
     >
       <v-app-bar-nav-icon @click="toggleDrawer"></v-app-bar-nav-icon>
-      <v-spacer></v-spacer>
     </v-app-bar>
-      <v-navigation-drawer v-model="drawer" app>
+    <v-navigation-drawer v-model="drawer" app>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -35,16 +35,18 @@
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
-
           <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      </v-navigation-drawer>
+    </v-navigation-drawer>
     <v-main>
-      <router-view></router-view>
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
     </v-main>
+    <v-footer app></v-footer>
   </v-app>
 </template>
 
@@ -67,7 +69,8 @@ export default {
       items: [
           { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
           { title: 'Grid System', icon: 'mdi-view-dashboard', to: '/grid-system'},
-          { title: 'Grid List Page', icon: 'mdi-view-dashboard', to: '/grid-list-page'}
+          { title: 'Grid List Page', icon: 'mdi-view-dashboard', to: '/grid-list-page'},
+          { title: 'Breakpoints', icon: 'mdi-view-dashboard', to: '/breakpoints'}
         ],
         right: null,
     }
