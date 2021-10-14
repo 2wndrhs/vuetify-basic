@@ -1,6 +1,6 @@
 <template>
     <!-- vuetify는 12cols grid system을 적용 -->
-  <v-conatiner>
+  <v-container>
     <v-row>
         <!-- cols속성은 v-col 컴포넌트 안에 정의 -->
         <v-col
@@ -17,7 +17,7 @@
             </v-card>
         </v-col>
     </v-row>
-  </v-conatiner>
+  </v-container>
 </template>
 
 <script>

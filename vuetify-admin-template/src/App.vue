@@ -63,7 +63,7 @@
         <router-view></router-view>
       </v-container>
     </v-main>
-    <v-footer app></v-footer>
+    <!-- <v-footer app></v-footer> -->
   </v-app>
 </template>
 
@@ -95,7 +95,7 @@ export default {
           { title: 'Icons', icon: 'mdi-view-dashboard', to: '/icons'}
         ],
       right: null,
-      gradient: 'rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)'
+      gradient: 'rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)',
     }
   },
 }
