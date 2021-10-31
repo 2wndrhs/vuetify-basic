@@ -1,7 +1,9 @@
 <template>
   <v-container>
       <v-card class="pa-3">
-        <v-row>
+        <v-row
+          justify="space-around"
+        >
           <v-col cols="auto">
             <v-icon x-large color="primary">mdi-account</v-icon>
           </v-col>

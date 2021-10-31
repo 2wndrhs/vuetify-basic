@@ -1,12 +1,12 @@
 // 전체적으로 css를 변경하고 싶을 때 사용
-
+// font size 변경 시 rem 이나 em 사용
 $font-size-root: 16px;
 $btn-size: (
-    'x-small': 15,
-    'small': 23,
-    'default': 31,
-    'large': 39,
-    'x-large': 47
+    'x-small': 20,
+    'small': 28,
+    'default': 36,
+    'large': 44,
+    'x-large': 52
 );
 $headings:   (
     'h1': (
