@@ -1,25 +1,24 @@
 <template>
     <v-app>
-        <app-bar @drawer="toggleDrawer"></app-bar>
+        <default-bar @drawer="toggleDrawer"></default-bar>
         <!-- app 속성은 컴포넌트를 기본 레이아웃으로 만듬 -->
-        <app-drawer v-model="drawer"></app-drawer>
-    <v-main>
-      <v-container fluid>
-        <router-view></router-view>
-      </v-container>
-    </v-main>
+        <default-drawer v-model="drawer"></default-drawer>
+        <!-- <default-drawer :value="drawer"></default-drawer> -->
+        <default-view></default-view>
     <!-- <v-footer app></v-footer> -->
   </v-app>
 </template>
 
 <script>
-import AppBar from './AppBar.vue'
-import AppDrawer from './Drawer.vue'
+import DefaultBar from './AppBar.vue'
+import DefaultDrawer from './Drawer.vue'
+import DefaultView from './View.vue'
 export default {
     name: "DefaultLayout",
     components: {
-        AppBar,
-        AppDrawer
+        DefaultBar,
+        DefaultDrawer,
+        DefaultView
     },
     methods: {
         toggleDrawer(){

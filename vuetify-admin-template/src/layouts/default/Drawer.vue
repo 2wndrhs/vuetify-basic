@@ -5,6 +5,7 @@
       app
       :src="require('../../assets/sidebar.jpeg')"
     >
+    {{$attrs}}
       <template
         v-slot:img="props"
       >
