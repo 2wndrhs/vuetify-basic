@@ -5,7 +5,6 @@
       app
       :src="require('../../assets/sidebar.jpeg')"
     >
-    {{$attrs}}
       <template
         v-slot:img="props"
       >
@@ -39,8 +38,10 @@ export default {
             items: [
             { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
             { title: 'Pages', icon: 'mdi-menu', items: [
-              { title: 'Signin', icon: 'mdi-login', to: '/authentication/sign-in'},
-              { title: 'Signup', icon: 'mdi-logout', to: '/authentication/sign-up'},
+              { title: 'Authentication', icon: 'mdi-login', items: [
+                { title: 'Signin', icon: 'mdi-login', to: '/authentication/sign-in'},
+                { title: 'Signup', icon: 'mdi-logout', to: '/authentication/sign-up'},
+              ]},
               { title: 'ProductList', icon: 'mdi-reproduction', to: '/page/product-list'},
             ]},
             { title: 'Grid System', icon: 'mdi-view-dashboard', to: '/grid-system'},

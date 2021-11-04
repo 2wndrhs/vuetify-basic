@@ -10,6 +10,7 @@ import Tables from '../views/Tables.vue';
 import Forms from '../views/Forms.vue';
 import Buttons from '../views/Buttons.vue';
 import Icons from '../views/Icons.vue';
+import Test from '../views/Test.vue';
 import Signin from '../views/auth/Signin.vue'
 import Signup from '../views/auth/Signup.vue'
 import ProductList from '../views/pages/ProductList.vue'
@@ -31,6 +32,11 @@ export const router = new VueRouter({
                     path: '/',
                     name: 'DashBoard',
                     component: DashBoard
+                },
+                {
+                    path: '/test',
+                    name: 'Test',
+                    component: Test
                 },
                 {
                     path: '/grid-system',

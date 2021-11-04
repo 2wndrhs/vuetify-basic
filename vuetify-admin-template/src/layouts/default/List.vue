@@ -1,13 +1,21 @@
 <template>
   <v-list
+    expand
     dense
     nav
     >
         <template
             v-for="(item, index) in items"
-        >
+        >   
+            <default-list-group
+                v-if="item.items"
+                :key="`group-${index}`"
+                :item="item"
+            >
+            </default-list-group>
             <default-list-item
-                :key="index"
+                v-else
+                :key="`item-${index}`"
                 :item="item"
             >
             </default-list-item>
@@ -16,11 +24,13 @@
 </template>
 
 <script>
-import DefaultListItem from './ListItem.vue'
+import DefaultListItem from './ListItem.vue';
+import DefaultListGroup from './ListGroup.vue';
 export default {
 name: 'DefaultList',
 components: {
-    DefaultListItem
+    DefaultListItem,
+    DefaultListGroup
 },
 props: {
     items: {
