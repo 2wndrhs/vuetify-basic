@@ -7,7 +7,6 @@ module.exports = {
 		disableHostCheck: true,
 		overlay: false
 	},
-
     transpileDependencies: [
       'vuetify'
     ]
