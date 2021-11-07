@@ -1,7 +1,7 @@
 module.exports = {
     publicPath: '/absproxy/8081',
     devServer: {
-		public: '34.64.216.102',
+		public: 'http://34.64.97.184/absproxy/8081',
 		sockPath: "/absproxy/8081/sockjs-node",
 		port: 8081,
 		disableHostCheck: true,
