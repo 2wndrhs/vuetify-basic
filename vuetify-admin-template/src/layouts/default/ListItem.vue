@@ -2,7 +2,6 @@
     <v-list-item
         link
         :to="item.to"
-        active-class="primary"
         class="py-1"
     >
         <v-list-item-icon>

@@ -43,14 +43,24 @@ export const router = new VueRouter({
                     component: () => import('@/views/Typography.vue')
                 },
                 {
-                    path: '/tables',
-                    name: 'Tables',
-                    component: () => import('@/views/Tables.vue')
+                    path: '/tables/basic-table',
+                    name: 'BasicTable',
+                    component: () => import('@/views/table/BasicTable.vue')
                 },
                 {
-                    path: '/forms',
-                    name: 'Forms',
-                    component: () => import('@/views/Forms.vue')
+                    path: '/tables/app-table',
+                    name: 'AppTable',
+                    component: () => import('@/views/table/AppTable.vue')
+                },
+                {
+                    path: '/forms/validation-form',
+                    name: 'ValidationForm',
+                    component: () => import('@/views/form/ValidationForm.vue')
+                },
+                {
+                    path: '/forms/app-form',
+                    name: 'AppForm',
+                    component: () => import('@/views/form/AppForm.vue')
                 },
                 {
                     path: '/buttons',

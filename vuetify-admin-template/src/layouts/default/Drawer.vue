@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer 
+  <v-navigation-drawer
       v-bind="$attrs"
       dark
       app
@@ -16,11 +16,11 @@
       </template>
 
       <default-drawer-header></default-drawer-header>
-        
+
       <v-divider></v-divider>
 
       <default-list :items="items"></default-list>
-      
+
     </v-navigation-drawer>
 </template>
 
@@ -48,8 +48,22 @@ export default {
             { title: 'Grid List Page', icon: 'mdi-view-dashboard', to: '/grid-list-page'},
             { title: 'Breakpoints', icon: 'mdi-view-dashboard', to: '/breakpoints'},
             { title: 'Typography', icon: 'mdi-view-dashboard', to: '/typography'},
-            { title: 'Tables', icon: 'mdi-view-dashboard', to: '/tables'},
-            { title: 'Forms', icon: 'mdi-view-dashboard', to: '/forms'},
+            { title: 'Tables', icon: 'mdi-view-dashboard', items: [
+              {
+                title: 'Basic Table', icon: 'mdi-view-dashboard', to: '/tables/basic-table'
+              },
+              {
+                title: 'App Table', icon: 'mdi-view-dashboard', to: '/tables/app-table'
+              }
+            ]},
+            { title: 'Forms', icon: 'mdi-view-dashboard', items: [
+              {
+                title: 'Validation Form', icon: 'mdi-view-dashboard', to: '/forms/validation-form'
+              },
+              {
+                title: 'App Form', icon: 'mdi-view-dashboard', to: '/forms/app-form'
+              }
+            ]},
             { title: 'Buttons', icon: 'mdi-view-dashboard', to: '/buttons'},
             { title: 'Icons', icon: 'mdi-view-dashboard', to: '/icons'},
             ],
